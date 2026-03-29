@@ -1,106 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sardor Atamurodov - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h2 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sardor Atamurodov - Resume</title>
+  <style>
+    :root {
+      --text: #1f2937;
+      --muted: #4b5563;
+      --line: #d1d5db;
+      --accent: #2563eb;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .page {
+      max-width: 900px;
+      margin: 32px auto;
+      background: var(--bg);
+      padding: 40px 48px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 34px;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+    .contact {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .section {
+      margin-top: 24px;
+    }
+    .section h2 {
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin: 0 0 10px 0;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--line);
+    }
+    p {
+      margin: 8px 0;
+    }
+    .skills p {
+      margin: 4px 0;
+    }
+    .project {
+      margin-bottom: 16px;
+    }
+    .project h3 {
+      margin: 0 0 6px 0;
+      font-size: 18px;
+    }
+    .project ul {
+      margin: 6px 0 8px 20px;
+      padding: 0;
+    }
+    .project a, .links a {
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .edu-item {
+      margin-bottom: 8px;
+    }
+    @media print {
+      body {
+        background: #fff;
+      }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        max-width: none;
+        padding: 24px 28px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Sardor Atamurodov</h1>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:sardoratamuradov2006@gmail.com">sardoratamuradov2006@gmail.com</a> | 
-               GitHub: <a href="https://github.com/Sardor06">github.com/Sardor06</a> | 
-               LinkedIn: <a href="https://linkedin.com/in/s-atamurodov">linkedin.com/in/s-atamurodov</a></p>
+  <div class="page">
+    <h1>Sardor Atamurodov</h1>
+    <div class="contact">
+      Email: <a href="mailto:sardor.techie@gmail.com">sardor.techie@gmail.com</a> |
+      GitHub: <a href="https://github.com/Sardor06" target="_blank">https://github.com/Sardor06</a>
+    </div>
+
+    <section class="section">
+      <h2>SUMMARY</h2>
+      <p>
+        AI and Big Data student at Woosong University with hands-on experience in full-stack development,
+        robotics systems, and backend programming. Built and deployed real-world applications including a
+        live quiz platform with database integration. Strong interest in backend systems, data-driven
+        applications, and software engineering.
+      </p>
+    </section>
+
+    <section class="section skills">
+      <h2>SKILLS</h2>
+      <p><strong>Programming:</strong> PHP, Python, C, SQL</p>
+      <p><strong>Web:</strong> HTML, CSS</p>
+      <p><strong>Database:</strong> MySQL</p>
+      <p><strong>Tools:</strong> Git, GitHub, Linux, XAMPP, Cisco</p>
+    </section>
+
+    <section class="section">
+      <h2>PROJECTS</h2>
+
+      <div class="project">
+        <h3>Quiz Website (Full-Stack, Live)</h3>
+        <ul>
+          <li>Built a full-stack web application using PHP and MySQL</li>
+          <li>Implemented authentication and database integration</li>
+          <li>Deployed a live website and connected backend logic</li>
+        </ul>
+        <div class="links">
+          Live:
+          <a href="https://quiz-web.kesug.com/" target="_blank">https://quiz-web.kesug.com/</a><br>
+          GitHub:
+          <a href="https://github.com/Sardor06/quiz-website" target="_blank">https://github.com/Sardor06/quiz-website</a>
         </div>
-    </header>
+      </div>
 
-    <section>
-        <h2>Education</h2>
-        <h3>Mukhammad al-Khwarizmi specialized for IT school (ICTS), Tashkent, Uzbekistan</h3>
-        <p><em>Full stack development & Network security</em><br>August 2020 – August 2023</p>
+      <div class="project">
+        <h3>Drone Control System</h3>
+        <ul>
+          <li>Developed control logic for drone interaction</li>
+          <li>Applied real-time programming concepts</li>
+        </ul>
+        <div class="links">
+          GitHub:
+          <a href="https://github.com/Sardor06/drone_control" target="_blank">https://github.com/Sardor06/drone_control</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>AMR Hardware Interface</h3>
+        <ul>
+          <li>Built a hardware interface for robot control</li>
+          <li>Implemented system-level communication</li>
+        </ul>
+        <div class="links">
+          GitHub:
+          <a href="https://github.com/Sardor06/amr_hardware_interface" target="_blank">https://github.com/Sardor06/amr_hardware_interface</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Hotel Registration System</h3>
+        <ul>
+          <li>Built a console-based hotel management system</li>
+          <li>Used file handling and structured programming concepts</li>
+        </ul>
+        <div class="links">
+          GitHub:
+          <a href="https://github.com/Sardor06/hotel_registration_system" target="_blank">https://github.com/Sardor06/hotel_registration_system</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>CV Diagnosis System</h3>
+        <ul>
+          <li>Developed a CV analysis tool using Python</li>
+          <li>Applied data processing and logic implementation</li>
+        </ul>
+        <div class="links">
+          GitHub:
+          <a href="https://github.com/Sardor06/cv_diagnosys" target="_blank">https://github.com/Sardor06/cv_diagnosys</a>
+        </div>
+      </div>
     </section>
 
-    <section>
-        <h2>Work Experience</h2>
-        <h3>Cyber security Lab, ICTS</h3>
-        <ul>
-            <li>Educated for cyber security and worked on creating a safe network system for school including a Cisco router and checked by hacking what we created to learn from our mistakes.</li>
-            <li>Learned Linux Debian system to defend from cyber attacks and experienced between databases.</li>
-        </ul>
+    <section class="section">
+      <h2>EDUCATION</h2>
+      <div class="edu-item">Specialized Muhammad al-Khwarizmi IT School</div>
+      <div class="edu-item">Woosong University, South Korea</div>
+      <div class="edu-item"><strong>Major:</strong> AI and Big Data</div>
     </section>
 
-    <section>
-        <h2>Projects</h2>
-        <h3>Create a server (windows server)</h3>
-        <ul>
-            <li>Designed and developed a custom account capable of controlling switches or other devices in a place. (Windows server).</li>
-        </ul>
-
-        <h3>Registration system for hotel (C)</h3>
-        <ul>
-            <li>In this registration, you will choose everything like, what kind of room, which rooms are available whether you want a duo or solo, etc. After the system shows up in your imagination room.</li>
-        </ul>
-
-        <h3>University education system (Python)</h3>
-        <ul>
-            <li>The system includes several sections: Teacher, Student, Groups and Course(Subject types). Here Course section can do get(teacher, student), adding, transferring, or deleting the group(or student). But Teachers and students also take into account that's why there are have installed some limits.</li>
-        </ul>
-
-        <h3>Designing a Website for creating tests (HTML, CSS, MySQL, PHP)</h3>
-        <ul>
-            <li>That website helpful for teachers or other kind of events.</li>
-            <li>Frontend includes the person how to it work</li>
-            <li>Backend page is main here, so here people can add question for database and after they will share the test to their pupils by testcase format.</li>
-        </ul>
+    <section class="section">
+      <h2>LANGUAGES</h2>
+      <p>English – High</p>
+      <p>Uzbek – Native</p>
+      <p>Korean – Basic</p>
     </section>
-
-    <section>
-        <h2>Relevant Courses Taken</h2>
-        <ul>
-            <li>Full stack development (2021)</li>
-            <li>Cisco Networking (2022)</li>
-            <li>Windows server (2022)</li>
-            <li>Linux Debian (2023)</li>
-            <li>C programming language (2023)</li>
-            <li>Python programming language (2023)</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Proficiencies</h2>
-        <p><strong>Theoretical:</strong> Math, Cisco networking, Windows server Administration, Linux Debian</p>
-        <p><strong>Languages & Technologies:</strong> Python, C, MySQL, PHP</p>
-    </section>
+  </div>
 </body>
 </html>
